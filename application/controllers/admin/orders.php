@@ -38,10 +38,9 @@ class Orders extends AdminController
     {
         $this->template->set_template('backend');
         
-        $data['idordine']=$idordine;
         $this->template->write('title','Aggiorna gli ordini');
         $this->template->write_view('content','admin/order_update',$data);
         $this->template->render();
-        
+                
     }
 }
